@@ -1,1 +1,35 @@
-<p>alta-cobros works!</p>
+<div class="container">
+  <h2>Registrar cargo a lote</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="fechaEmision" class="form-label">Fecha de emisión</label>
+      <input type="date" class="form-control" id="fechaEmision" name="fechaEmision">
+    </div>
+    <div class="mb-3">
+      <label for="lote" class="form-label">Lote</label>
+      <input type="text" class="form-control" id="lote" name="lote">
+    </div>
+    <div class="mb-3">
+      <label for="tipo" class="form-label">Tipo</label>
+      <select class="form-select" id="tipo" name="tipo">
+        <option value="">Seleccionar tipo</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="periodo" class="form-label">Periodo</label>
+      <select class="form-select" id="periodo" name="periodo">
+        <option value="">Seleccionar periodo</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="monto" class="form-label">Monto</label>
+      <input type="number" class="form-control" id="monto" name="monto">
+    </div>
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancelar</button>
+  </form>
+</div>

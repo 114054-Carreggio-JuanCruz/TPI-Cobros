@@ -8,5 +8,23 @@ import { Component } from '@angular/core';
   styleUrl: './list-cobros.component.css'
 })
 export class ListCobrosComponent {
+  //cargos: Cargo[] = [];
 
+  //constructor(private cargoService: CargoService) {}
+
+  ngOnInit() {
+    this.loadCargos();
+  }
+
+  loadCargos() {
+    // this.cargoService.getCargos().subscribe(
+    //   (data) => this.cargos = data
+    // );
+  }
+
+  // editCargo(cargo: Cargo) {
+  // }
+
+  // deleteCargo(cargo: Cargo) {
+  // }
 }
